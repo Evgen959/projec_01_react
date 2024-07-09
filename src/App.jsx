@@ -9,6 +9,8 @@ function App() {
       <Button/>
       <Button/> */}
       <ProfileCard/>
+      <ProfileCard/>
+      <ProfileCard/>
     </div>
   );
 }
