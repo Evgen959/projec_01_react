@@ -1,20 +1,19 @@
 import "./styles.css";
-import avatar from "../../assets/free-icon-avatars-4725937.png";
 
 function ProfileCard() {
-  const userData = {
-    avatar: "",
-    userName: "John Jonson",
-    profession: "Actor",
-    hobbies: "diving",
-  };
-
+    const userData = {
+        avatar:
+          "https://img.freepik.com/premium-vector/men-women-different-poses-sitting-standing-isolated-white-background-cute-flat-style-vector-illustration_71599-9116.jpg?w=740",
+        userName: "John Doe",
+        profession: "Web Developer",
+        hobbies: ["Reading", "Traveling", "Photography"],
+      };
   return (
-    <div>
-      <img src={avatar} alt="ucer_avatar" />
-      <h1>{userData.userName}</h1>
-      <h2> Profession:{userData.profession}</h2>
-      <h2> Hobbies: {userData.hobbies}</h2>
+    <div className="profile-card">
+      <h1 className="user-name">{userData.userName}</h1>
+      <img src={userData.avatar} alt="" />
+      <div className="user-data">{userData.profession}</div>
+      <div className="user-data">{userData.hobbies[0]}</div>
     </div>
   );
 }
