@@ -4,30 +4,36 @@ import "./styles.css";
 
 function Feedback() {
   const [countLike, setLikeCount] = useState(0);
+  const [countDislike, setDislikeCount] = useState(0);
+
   const onLikeClick = () => {
     setLikeCount((prevValue) => prevValue + 1);
-  };
-  const [countDislike, setDislikeCount] = useState(0);
+  };  
+
   const onDislikeClick = () => {
     setDislikeCount((prevValue) => prevValue + 1);
   };
-    const onResetResults = () => {
-        
-    };
+  const onResetResults = () => {
+    setLikeCount(0);
+    setDislikeCount(0);
+  };
 
 
   return (
     <div className="feedback-component">
-      <div>
-        <Button name="Like"  onButtonClick={onLikeClick}/>
+      <div className="feedback-result-component">
+        <div className="like-dislike-component">
+          <div className="fesult">{countLike}</div>
+          <Button name="LIKE" onButtonClick={onLikeClick} />
+        </div>
+        <div className="like-dislike-component">
+          <Button name="DISLIKE" onButtonClick={onDislikeClick} />
+          <div className="fesult">{countDislike}</div>
+        </div>
       </div>
-      <div>{countLike}</div>
+
       <div>
-        <Button name="Dislike" onButtonClick={onDislikeClick}/>
-      </div>
-      <div>{countDislike}</div>
-      <div>
-        <Button name="Reset Results" onButtonClick={onResetResults}/>
+        <Button name="RESET RESULT" onButtonClick={onResetResults} />
       </div>
     </div>
   );
