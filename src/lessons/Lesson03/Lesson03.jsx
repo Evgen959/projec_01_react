@@ -6,16 +6,19 @@ import { lionObj, zebraObj, hippoObj } from "./data";
 function Lesson03() {
   return (
     <div className="lesson03-component">
-      <Button buttonName="Clear" />
-      <Button buttonName="Delete" />
-      <Button />
+      {/* <Button name="Clear" />
+      <Button name="Delete" />
+      <Button /> */}
       <AnimalCard
         animalName={lionObj.name}
         species={lionObj.species}
         role={lionObj.role}
         animalImg={lionObj.image}
         //animalData = {lionObj}
-      />
+      >
+        <p>Madagascar</p>
+        <div>{lionObj.skills[0]}</div>
+      </AnimalCard>
       <AnimalCard
         animalName={zebraObj.name}
         species={zebraObj.species}
