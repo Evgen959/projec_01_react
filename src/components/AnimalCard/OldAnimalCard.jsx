@@ -1,6 +1,6 @@
 import "./styles.css";
 
-function AnimalCard({ animalName, species, role, animalImg, children}) {
+function OldAnimalCard({ animalName, species, role, animalImg, children}) {
   return (
     <div className="animal-card-wrapper">
       <h2>{animalName}</h2>
@@ -12,7 +12,7 @@ function AnimalCard({ animalName, species, role, animalImg, children}) {
   );
 }
 
-export default AnimalCard;
+export default OldAnimalCard;
 
 // const props = {
 //   animalName:

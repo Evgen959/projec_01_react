@@ -5,6 +5,7 @@ import "./App.css";
 // import Lesson02 from "./lessons/Lesson02/Lesson02";
 // import Lesson03 from "./lessons/Lesson03/Lesson03";
 // import Lesson004 from "./lessons/Lesson004/Lesson004";
+// import Lesson005 from "./lessons/Lesson005/Lesson005"
 
 //Homeworks imports
 // import Homework02 from "./homeworks/Homework02/Homework02";
@@ -20,6 +21,7 @@ function App() {
       {/* <Homework003/> */}
       {/* <Lesson004/> */}
       <Homework004/>
+      {/* <Lesson005/> */}
       
     </div>
   );
